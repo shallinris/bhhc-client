@@ -15,45 +15,51 @@ class AnswerList extends Component {
         );
 
         const style = {
+            CardHeader: {
+                backgroundColor: '#285171',
+            },
+            h1: {
+                color: '#285171',
+                textAlign: 'center',
+                fontFamily: 'Titillium Web',
+                marginTop: '40px',
+            },
+            Grid: {
+                padding: '40px',
+                // textAlign: 'center'
+            },
+            table: {
+                margin: '0 auto',
+                textAlign: 'center',
+                width: '100%'
+            },
             rows: {
                 height: '80px',
                 padding: '40px',
                 color: 'white',
                 backgroundColor: '#285171',
-
-
             },
-            colums: {
-
-            },
-            table: {
-                textAlign: 'center',
-            },
-
-            Grid: {
-                padding: '40px',
-            },
-            CardHeader: {
-                backgroundColor: '#285171',
-            }
+            // columns: {
+            //
+            // },
         };
 
 
         return (
             <Card>
                 <CardHeader style={style.CardHeader}/>
+                <h1 style ={style.h1}>Hi 👋 I'm Shallin, <b></b>and this is why I want to work at BHHC:</h1>
                 <Grid style={style.Grid}item xs={12}>
                 <table style={style.table}>
                     <tbody>
                     <tr style={style.rows}>
-                        <th style={style.columns}>Answer Id</th>
-                        <th style={style.columns}>Why I Want To Work At BHHC
+                        <th>Answer Number</th>
+                        <th>Why
                             <div>
-                                <img src='../images/bhhc-logo.png' alt='logo'/>
+                                <img src='https://www.kzib.com/wp-content/uploads/sites/319/2019/02/KZIB-Carriers-BHHC.jpeg' alt='logo' width='45' height='45'/>
                             </div>
 
                         </th>
-                        {/*<th>Description</th>*/}
                     </tr>
                     {answers}
                     </tbody>
@@ -61,7 +67,6 @@ class AnswerList extends Component {
                 </Grid>
             </Card>
         )
-
     }
 }
 
