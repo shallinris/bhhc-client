@@ -31,13 +31,13 @@ class AnswerList extends Component {
             table: {
                 margin: '0 auto',
                 textAlign: 'center',
-                width: '100%'
+                width: '100%',
             },
             rows: {
                 height: '80px',
-                padding: '40px',
+                // padding: '40px',
                 color: 'white',
-                backgroundColor: '#285171',
+                backgroundColor: '#285171'
             },
             // columns: {
             //
@@ -48,7 +48,7 @@ class AnswerList extends Component {
         return (
             <Card>
                 <CardHeader style={style.CardHeader}/>
-                <h1 style ={style.h1}>Hi 👋 I'm Shallin, <b></b>and this is why I want to work at BHHC:</h1>
+                <h1 style ={style.h1}>Hi 👋 I'm Shallin, and this is why I want to work at BHHC</h1>
                 <Grid style={style.Grid}item xs={12}>
                 <table style={style.table}>
                     <tbody>
@@ -65,6 +65,7 @@ class AnswerList extends Component {
                     </tbody>
                 </table>
                 </Grid>
+                <CardHeader style={style.CardHeader}/>
             </Card>
         )
     }
