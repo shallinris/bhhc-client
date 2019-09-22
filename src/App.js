@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import AnswerList from './components/AnswerList'
-const ReactDOM = require('react-dom');
 
 /**
  * Renders a list of answers by hitting the /answers api endpoint
  */
+
 class App extends Component {
+
     constructor(props) {
         super(props);
         this.state = {answers: []};
@@ -24,7 +26,13 @@ class App extends Component {
 
     render() {
         return (
-            <AnswerList answers={this.state.answers}/>
+            <div>
+                <header class="header"><img class = "img" src='https://www.bhhc.com/media/39006/logo.png'/></header>
+                <div class="title">
+                    <h1>Why I want to work for BHHC</h1>
+                </div>
+                <AnswerList answers={this.state.answers}/>
+            </div>
         )
     }
 }

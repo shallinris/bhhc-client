@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+body {
+  padding: 1em;
+  font-family: 'Roboto Condensed',sans-serif;
+
+  background-color: #F4F4F4;
+}
+
+.title {
+  color: #005695;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.header {
+  /*height: 75px;*/
+  /*background-color: white;*/
+  /*box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);*/
+  /*position: relative;*/
+  /*z-index: 1;*/
+}
+
+.img {
+  width: 249px;
+
+}
+
 .App {
   text-align: center;
 }

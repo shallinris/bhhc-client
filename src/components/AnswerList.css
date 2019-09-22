@@ -1,0 +1,9 @@
+/**
+ * Provides styles for answer lists.
+ */
+
+.answer-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
