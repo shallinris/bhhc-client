@@ -1,5 +1,5 @@
 /**
- * Proivides styles for answers.
+ * Provides styles for answers
  */
 
 .answer {
@@ -13,7 +13,6 @@
     margin-bottom: 1em;
     background: white;
     border-left: 0.2em solid #005695;
-    /*background-color: #F4F4F4;*/
 }
 
 .answer:hover {
@@ -29,7 +28,6 @@
     padding-right: 0.5em;
     font-size: 4em;
     font-weight: bold;
-    /*color: darkgray;*/
 }
 
 .answer .text {

@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-
 import AnswerList from './components/AnswerList'
 
 /**
@@ -14,21 +13,25 @@ class App extends Component {
         this.state = {answers: []};
     }
 
-    //response comes back as an array
-    //need to get body from response
-    //fetch now part of JS(url,
+    /** Retrieves data from specified endpoint, then returns a response. Then the answers
+     * element of the state is set equal to the response
+     */
     componentDidMount() {
         fetch('http://localhost:8080/answers').then(response => {
             return response.json();
-            // this.setState({answers: response.entity._embedded.answers});
-        }).then(data=>{this.setState({answers:data})})
+        }).then(data => {
+            this.setState({answers: data})
+        }).catch(function (error) {
+            console.log(error);
+        })
     }
 
     render() {
         return (
             <div>
-                <header class="header"><img class = "img" src='https://www.bhhc.com/media/39006/logo.png'/></header>
-                <div class="title">
+                <header><img className="img" alt="logo"
+                             src='https://www.bhhc.com/media/39006/logo.png'/></header>
+                <div className="title">
                     <h1>Why I want to work for BHHC</h1>
                 </div>
                 <AnswerList answers={this.state.answers}/>
@@ -36,5 +39,6 @@ class App extends Component {
         )
     }
 }
+
 export default App;
 

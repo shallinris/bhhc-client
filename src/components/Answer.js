@@ -1,18 +1,18 @@
 import React from 'react';
-
 import './Answer.css';
 
 /**
- * Provides a component for rendering answers.
+ * Provides a component for rendering answers
  */
+
 class Answer extends React.Component {
     render() {
         return (
-            <div class="answer">
-                <div class="id">
+            <div className="answer">
+                <div className="id">
                     {this.props.id}
                 </div>
-                <div class="text">
+                <div className="text">
                     {this.props.text}
                 </div>
             </div>
