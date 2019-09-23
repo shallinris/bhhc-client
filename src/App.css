@@ -7,19 +7,16 @@
 body {
     padding: 1em;
     font-family: 'Roboto Condensed', sans-serif;
-
     background-color: #F4F4F4;
 }
 
 .title {
     color: #005695;
-    text-decoration: underline;
     text-align: center;
 }
 
 .img {
     width: 249px;
-
 }
 
 .App {
